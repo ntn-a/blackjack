@@ -1,8 +1,12 @@
 import './App.css';
+import Blackjack from './components/Blackjack';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div id="app">
+      <header id="appName">Blackjack</header>
+      <Blackjack/>
+      <footer>© Copyright 2022 Nhan Nguyen</footer>
     </div>
   );
 }
