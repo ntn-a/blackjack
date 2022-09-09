@@ -8,7 +8,7 @@ const Card = () => {
     return Math.floor(Math.random() * max);
   }
   /**
-   * Array that holds card data.
+   * Array that holds card values.
    */
   const cards = {
     2: "2",
@@ -27,10 +27,10 @@ const Card = () => {
    * @returns A random card from 2 to A.
    */
   const getCard = () => {
-    const number = getRandomInt(10) + 1;
+    const number = getRandomInt(9) + 2;
     if (number === 10) {
-      const faceCardNumber = getRandomInt(4);
-      return cards[faceCardNumber];
+      const faceCardNumber = getRandomInt(3);
+      return cards[number][faceCardNumber];
     } else {
       return cards[number];
     }
